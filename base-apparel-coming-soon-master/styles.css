@@ -8,6 +8,18 @@ body {
   background-color: hsl(0, 100%, 98%);
 }
 
+.logo {
+  margin: 2rem;
+}
+.photo {
+  width: 100%;
+}
+
+.body {
+  text-align: center;
+  margin: 2rem;
+  width: 100%;
+}
 .firstWord {
   font-family: "Josefin Sans", sans-serif;
   font-size: 30px;
@@ -19,6 +31,22 @@ body {
   font-size: 30px;
   font-weight: 600;
   color: hsl(0, 6%, 24%);
+}
+.body-text {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(0, 36%, 70%);
+  margin: 1rem;
+  line-height: 1.6;
+}
+.inputButton {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 2rem; */
 }
 input {
   background-color: transparent;
@@ -33,23 +61,18 @@ input {
   color: hsl(0, 36%, 70%);
   opacity: 1;
 }
-.inputButton {
-  width: 100%;
-  /* position: relative; */
-  /* display: flex; */
-  /* flex: 1; */
-}
+
 button {
-  /* display: inline-block; */
   position: absolute;
-  right: 5px;
+  right: 70px;
   z-index: 2;
   border: none;
   cursor: pointer;
   border-radius: 15px;
-  width: 3rem;
-  height: 2rem;
-  background: hsl(0, 74%, 74%);
+  width: 2.5rem;
+  height: 1.9rem;
+  background-image: linear-gradient(90deg, #daa4a4, #ee8c8c);
+  box-shadow: 5px 2px 30px 2px #daa4a4;
 }
 
 /* 
@@ -72,4 +95,28 @@ button:active {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+  .inputButton {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 2rem; */
+  }
+
+  button {
+    position: absolute;
+    right: 600px;
+    z-index: 2;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 2.5rem;
+    height: 1.9rem;
+    background-image: linear-gradient(90deg, #daa4a4, #ee8c8c);
+    box-shadow: 5px 2px 30px 2px #daa4a4;
+  }
 }
