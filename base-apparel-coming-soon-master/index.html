@@ -14,33 +14,42 @@
  
 </head>
 <body>
-<div class="logo"><img src="./images/logo.svg"></div>
-<div class="photo"><img src="./images/hero-mobile.jpg"></div>
-<div class="body">
-  <div class="firstWord">
-    W E 'R E
+  <main>
+    <div class="logo"><img src="./images/logo.svg"></div>
+    <div class="mobile-photo">
+      <img class="photo" src="./images/hero-mobile.jpg">
+    </div>
+  <div class="body">
+    <div class="firstWord">
+      W E 'R E
+    </div>
+    <div class="coming-soon">
+    C O M I N G <br/> S O O N<br/>
+    </div>
+    <div class="body-text">
+      
+        Hello fellow shoppers! We're currently building<br/>our new fashion store. 
+        Add your email below to<br/>stay up-to-date with announcements and our launch deals.
+    </div>
   </div>
-  <div class="coming-soon">
-  C O M I N G <br/> S O O N<br/>
-  </div>
-  <div class="body-text">
-    
-      Hello fellow shoppers! We're currently building<br/>our new fashion store. 
-      Add your email below to<br/>stay up-to-date with announcements and our launch deals.
-  </div>
-</div>
-<form class="inputButton" action="/action_page.php" method="get">
-  
-  <input type="email" id="email" name="email" placeholder="Email Address">
-  <button type="submit"  value="Submit"><img src="./images/icon-arrow.svg"></button>
-</form>
-  
-  
+  <form class="form" action="/action_page.php" method="get">
+    <div class="call-to-action">
+
+      <input class="form-input" type="email" id="email" name="email" placeholder="Email Address">
+      <button class="form-btn" type="submit"  value="Submit"><img src="./images/icon-arrow.svg"></button>
+    </div>
+  </form>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Alecia Tatum</a>.
     </p>
   </footer>
+</main>
+<div class="desktop-photo">
+    <img  src="./images/hero-desktop.jpg">
+</div>
+
+  
 </body>
 </html>
