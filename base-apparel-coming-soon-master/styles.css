@@ -17,9 +17,9 @@ body {
 .desktop-photo {
   display: none;
 }
-.body {
+.text-body {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
   width: 100%;
 }
 .firstWord {
@@ -34,7 +34,7 @@ body {
   font-weight: 600;
   color: hsl(0, 6%, 24%);
 }
-.body-text {
+.paragraph-text {
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -58,6 +58,9 @@ input {
   text-align: center;
   margin: 2rem;
 }
+input:focus {
+  outline: none;
+}
 ::placeholder {
   color: hsl(0, 36%, 70%);
   opacity: 1;
@@ -71,25 +74,28 @@ input {
   border-radius: 50px;
   padding: 12px;
   width: 70px;
-
   background-image: linear-gradient(90deg, #daa4a4, #ee8c8c);
   box-shadow: 5px 2px 30px 2px #daa4a4;
 }
 
-/* 
-button:hover,
-button:focus {
-  background: #0053ba;
+.form-btn:focus {
+  outline: none;
+}
+.form-btn:hover {
+  background: #fdd5d5;
+}
+.icon-error {
+  margin-top: 0.8em;
+  visibility: hidden;
+}
+.error-msg {
+  color: hsl(0, 93%, 68%);
+  font-weight: bold;
+  text-align: left;
+  padding-left: 12%;
+  margin-bottom: 5vh;
 }
 
-button:focus {
-  outline: 1px solid #fff;
-  outline-offset: -4px;
-}
-
-button:active {
-  transform: scale(0.99);
-} */
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -98,39 +104,58 @@ button:active {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 740px) {
   body {
     display: flex;
+    justify-content: space-evenly;
+  }
+  .desktop-bg-image {
+    background-image: url("./images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100% 100%;
+    display: block;
+  }
+  .text-body {
+    text-align: center;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    width: 100%;
+  }
+  .header {
+    text-align: left;
+    margin-left: 10px;
+  }
+  .paragraph-text {
+    text-align: left;
   }
   .desktop-photo {
     background-image: url("./images/hero-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 40%;
+
     display: block;
   }
   .mobile-photo {
     display: none;
   }
 
-  /* .form {
-    width: 100%;
+  .call-to-action {
     position: relative;
-    display: flex;
+    /* margin: 2.5em auto 0; */
     justify-content: center;
     align-items: center;
-    
-  } */
+  }
 
-  button {
+  .form-btn {
     position: absolute;
-    right: 240px;
-    z-index: 2;
+    right: 55px;
     border: none;
     cursor: pointer;
-    border-radius: 15px;
-    width: 2.5rem;
-    height: 1.9rem;
+    border-radius: 50px;
+    padding: 12px;
+    width: 70px;
     background-image: linear-gradient(90deg, #daa4a4, #ee8c8c);
     box-shadow: 5px 2px 30px 2px #daa4a4;
   }
