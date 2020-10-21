@@ -14,29 +14,36 @@
  
 </head>
 <body>
-  <main>
+  <main class="desktop-bg-image"> 
+    
     <div class="logo"><img src="./images/logo.svg"></div>
     <div class="mobile-photo">
       <img class="photo" src="./images/hero-mobile.jpg">
     </div>
-  <div class="body">
-    <div class="firstWord">
-      W E 'R E
-    </div>
-    <div class="coming-soon">
-    C O M I N G <br/> S O O N<br/>
-    </div>
-    <div class="body-text">
+  <div class="text-body">
+    <header class="header">
+      <div class="firstWord">
+        W E 'R E
+      </div>
+      <div class="coming-soon">
+      C O M I N G <br/> S O O N<br/>
+      </div>
+    </header>
+    <div class="paragraph-text">
       
         Hello fellow shoppers! We're currently building<br/>our new fashion store. 
         Add your email below to<br/>stay up-to-date with announcements and our launch deals.
     </div>
   </div>
-  <form class="form" action="/action_page.php" method="get">
+  <form class="form" >
     <div class="call-to-action">
 
       <input class="form-input" type="email" id="email" name="email" placeholder="Email Address">
-      <button class="form-btn" type="submit"  value="Submit"><img src="./images/icon-arrow.svg"></button>
+      <button onclick="validate" class="form-btn" type="submit"  value="Submit"><img src="./images/icon-arrow.svg"></button>
+    </div>
+    <div class="icon-error">
+      <img src="./images/icon-error.svg">
+      <p class="error-msg"></p>
     </div>
   </form>
   <footer>
@@ -46,10 +53,10 @@
     </p>
   </footer>
 </main>
-<div class="desktop-photo">
-    <img  src="./images/hero-desktop.jpg">
-</div>
+        <div class="desktop-photo">
+            <img  src="./images/hero-desktop.jpg">
+        </div>
 
-  
+  <script src="subscribe.js"> </script>
 </body>
 </html>
